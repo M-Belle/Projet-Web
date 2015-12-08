@@ -5,16 +5,23 @@ body{
 }
 .logo{
 	max-width: 15%;
+	margin-left: 43.5%;
 }
 h1{
-	font-family: Impact;
+	font-family:impact;
+	text-align:center;
+	color: #3399ff;
+	
 }
-
 #recherche{
-	text-align: right;
-	position: relative;
-	display:inline;
+	float: right;
 	
-	
-
+}
+section{
+	border-style: solid;
+	border-color: white;
+	margin-left: 12%;
+	margin-right: 12%;
+	border-radius: 5em;
+	background-color:white;
 }
