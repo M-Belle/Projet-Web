@@ -1,0 +1,20 @@
+body{
+	background-image: url(images/fond.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 290%;
+}
+.logo{
+	max-width: 15%;
+}
+h1{
+	font-family: Impact;
+}
+
+#recherche{
+	text-align: right;
+	position: relative;
+	display:inline;
+	
+	
+
+}
