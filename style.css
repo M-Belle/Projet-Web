@@ -11,17 +11,37 @@ h1{
 	font-family:impact;
 	text-align:center;
 	color: #3399ff;
-	
 }
 #recherche{
 	float: right;
-	
 }
 section{
-	border-style: solid;
-	border-color: white;
 	margin-left: 12%;
 	margin-right: 12%;
 	border-radius: 5em;
 	background-color:white;
 }
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #3399ff;
+	border-bottom-left-radius:5em;
+	border-bottom-right-radius:5em;
+}
+li{
+	float: left;	
+}
+li a{
+	display:block;
+	color: white;
+	text-align: center;
+	padding: 10% 20%;
+	text-decoration:none;
+}
+li a:hover{
+	background-color:#333;
+}
+
+
