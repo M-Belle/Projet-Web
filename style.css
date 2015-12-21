@@ -12,9 +12,6 @@ h1{
 	text-align:center;
 	color: #3399ff;
 }
-#recherche{
-	float: right;
-}
 section{
 	margin-left: 12%;
 	margin-right: 12%;
@@ -24,24 +21,55 @@ section{
 ul{
 	list-style-type: none;
 	margin: 0;
-	padding: 0;
+	padding: 0.5%;
 	overflow: hidden;
 	background-color: #3399ff;
 	border-bottom-left-radius:5em;
 	border-bottom-right-radius:5em;
+	text-align: center;
 }
 li{
-	float: left;	
+	display: inline;	
 }
 li a{
-	display:block;
+	display:inline-block;
 	color: white;
-	text-align: center;
-	padding: 10% 20%;
+	padding: 2.5% 2.2%;
 	text-decoration:none;
+	text-align:center;
 }
 li a:hover{
 	background-color:#333;
 }
+#search{
+	width: 50%;
+    padding: 1%;
+    margin-left:auto;
+	margin-right:auto;
+    background: #3399ff;
+    border-radius: 1em;
+}
+#text{
+	width: 70%;
+	height:0.8em;
+    padding: 1.5%;  
+    border: 0;
+	border-top-left-radius:0.5em;
+    border-bottom-left-radius: 0.5em;   	
+}
+#button{
+	overflow: visible;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    height: 2em;
+    width: 26%;
+    color: #3399ff;
+    background: white;
+    border-top-right-radius: 0.5em;   
+	border-bottom-right-radius:0.5em;
+	
+}
+
 
 
