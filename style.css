@@ -12,7 +12,7 @@ h1{
 	text-align:center;
 	color: #3399ff;
 }
-header{
+section{
 	margin-left: 12%;
 	margin-right: 12%;
 	border-radius: 5em;
@@ -69,13 +69,6 @@ li a:hover{
     border-top-right-radius: 0.5em;   
 	border-bottom-right-radius:0.5em;
 	
-}
-section{
-	margin-left: 12%;
-	margin-right: 12%;
-	margin-top: 12%;
-	border-radius: 5em;
-	background-color:white;
 }
 
 
