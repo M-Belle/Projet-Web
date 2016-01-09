@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+				<!--Controle la dimension et le zoom de la page-->
+				<meta name="viewport" content="width=device-width,initial-scale=1.0">
+				
+				<link rel="stylesheet" type="text/css" href="style.css">
+				<title>Surf experience</title>
+	</head>
+	<body>
+			<div id="bloc_page">
+		<header>
+				<!--Logo et titre-->
+				<img src="images/logo.png" class="logo"/>
+				<h1>Surf Experience</h1>
+				<!--Lien vers autre pages-->
+				<ul>
+					<li><a href="Accueil.html">Accueil</a></li>
+					<li><a href="Shortboard.html">Shortboard</a></li>
+					<li><a href="Longboard.html">Longboard</a></li>
+					<li><a href="Accessoires.html">Accessoires</a></li>
+					<li><a href="Qui_sommes_nous.html">A Propos</a></li>
+					<li><a href="Panier.html">Mon Panier</a></li>
+				</ul>
+		</header>
+				<!--Barre de recherche-->
+				<form id="search" action="resultat.html" method="get">
+					<input class="text" type="text" placeholder="entrer votre recherche"/>
+					<input class="submit" type="submit" value="Rechercher"/>
+				</form>
+				<h2>Formulaire de Commandes</h2>
+			<div class="bloc">
+				<form>
+					<p>
+						<label for="nom">Nom </label><input type="text" id="nom"/>
+					</p>
+					<p>
+						<label for="prenom">Prénom </label> <input type="text" id="prenom"/>
+					</p> 	
+					<p>
+						<label for="adresse">Adresse </label><input type="text" id="adresse"/>
+					</p> 
+					<p>	
+						<label for="code_postal">Code Postal </label><input type="text" id="code_postal"/>
+					</p> 	
+					<p>	
+						<label for="ville">Ville </label> <input type="text" id="ville"/>
+					</p> 	
+					<p>	
+						<label for="fixe">Telephone Fixe </label> <input type="tel" id="fixe"/>
+					</p> 	
+					<p>	
+						<label for="portable">Telephone Portable </label> <input type="tel" id="portable"/>
+					</p> 
+					<p>	
+						<label for="email">Adresse Mail </label> <input type="email" id="email"/>
+					</p> 
+					<p>
+						<label for="paypal"><img class="payer" src="images/paypal.jpg"/></label><input name="payer" value="paypal" checked="checked" id="paypal" type="radio"/>
+					</p>
+					<p>
+						<label for="carte"><img class="payer" src="images/carte.jpg"/></label><input name="payer" value="carte" id="carte" type="radio"/>
+					</p>
+				</form>
+					<a class="valider" href="#pop_up">Valider</a>
+			<div id="pop_up">
+			<div class="fenetre">
+					<a href="#revenir"><img class="fermer" src="images/Fermer.png"></a>
+					<p>Votre commande a été validée</p>
+					<p>Veuillez patientez</p>
+					<p>Vous allez être redirigé vers le site de payement</p>
+			</div>
+			</div>
+			</div>
+	</body>
+</html>

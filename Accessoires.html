@@ -1,76 +1,78 @@
 <!DOCTYPE html>
 <html>
 	<head>
-				<meta charset="UTF-8">
+				<!--Controle la dimension et le zoom de la page-->
+				<meta name="viewport" content="width=device-width,initial-scale=1.0">
+				
 				<link rel="stylesheet" type="text/css" href="style.css">
 				<title>Surf experience</title>
 	</head>
 	<body>
+			<div id="bloc_page">
 		<header>
-			<!--Logo et titre-->
+				<!--Logo et titre-->
 				<img src="images/logo.png" class="logo"/>
 				<h1>Surf Experience</h1>
-			<!--Lien vers autre pages-->
-			<ul>
-				<li><a href="Accueil.html">Accueil</a></li>
-				<li><a href="Shortboard.html">Shortboard</a></li>
-				<li><a href="Longboard.html">Longboard</a></li>
-				<li><a href="Accessoires.html">Accessoires</a></li>
-				<li><a href="Qui_sommes_nous.html">A Propos</a></li>
-			</ul>
+				<!--Lien vers autre pages-->
+				<ul>
+					<li><a href="Accueil.html">Accueil</a></li>
+					<li><a href="Shortboard.html">Shortboard</a></li>
+					<li><a href="Longboard.html">Longboard</a></li>
+					<li><a href="Accessoires.html">Accessoires</a></li>
+					<li><a href="Qui_sommes_nous.html">A Propos</a></li>
+					<li><a href="Panier.html">Mon Panier</a></li>
+				</ul>
 		</header>
-			<!--Barre de recherche-->
-			<form id="search" action="resultat.html" method="get">
-				<input id="text" type="text" placeholder="entrer votre recherche"/>
-				<input id="button" type="submit" value="Rechercher"/>
-			</form>
+				<!--Barre de recherche-->
+				<form id="search" action="resultat.html" method="get">
+					<input class="text" type="text" placeholder="entrer votre recherche"/>
+					<input class="submit" type="submit" value="Rechercher"/>
+				</form>
 				<h2>Accessoires</h2>
-		<div id="bloc">
-			<div id="article">
+			<div class="bloc">
+			<div class="article">
 				<img src="images/accessoire1.jpg"/>
 				<h3>Ocean Earth</h3>
 				<p>Day Cover Shortboard</p>
 				<span class="old">55€</span>
 				<span class="price">47€</span>
 			</div>
-			<div id="article">
+			<div class="article">
 				<img src="images/accessoire2.jpg"/>
 				<h3>Fcs</h3>
 				<p>Explorer Longboard 9.6</p>
 				<span class="old">140€</span>
 				<span class="price">112€</span>
 			</div>
-			<div id="article">
+			<div class="article">
 				<img src="images/accessoire3.jpg"/>
 				<h3>Fcs</h3>
 				<p>DayRunner FunBoard</p>
 				<span class="price">94€</span>
 			</div>
-		</div>
-		<div id="bloc">
-			<div id="article">
+			</div>
+			<div class="bloc">
+			<div class="article">
 				<img src="images/accessoire4.jpg"/>
 				<h3>Fcs</h3> 
 				<p>Stretch Longboard 9.0</p>
 				<span class="price">62€</span>
 			</div>
-			<div id="article">
+			<div class="article">
 				<img src="images/accessoire5.jpg"/>
 				<h3>Fcs</h3>
 				<p>Arc Tri Fin 3 Derives</p>
 				<span class="price">90€</span>
 			</div>
-			<div id="article">
+			<div class="article">
 				<img src="images/accessoire6.jpg"/>
 				<h3>Fcs</h3>
 				<p>2 Mb Carbon Rocket Red Tri</p>
 				<span class="price">135€</span>
 			</div>
-		</div>
+			</div>
 		<footer>
-				<p>Il n'est pas possible de commander en ligne sur ce site.
-				Pour <a href="Qui_sommes_nous.html">en savoir plus</a>, veuillez nous contacter.
-				</p>	
+				<p>Pour tout renseignement, veuillez nous <a href="Qui_sommes_nous.html">contacter.</a></p>	
 		</footer>
 	</body>
 </html>

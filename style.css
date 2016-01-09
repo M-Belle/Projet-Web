@@ -1,24 +1,34 @@
 body{
 	background-image: url(images/fond.png);
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: cover;
 	background-attachment:fixed;
 }
+
+#bloc_page{
+	width:100%;
+}
+
+/* Menu */
+
 .logo{
 	max-width: 15%;
 	margin-left: 43.5%;
 }
+
 h1{
-	font-family:impact;
+	font-family:arial,helvetica,sans-serif;
 	text-align:center;
 	color: #3399ff;
 }
+
 header{
 	margin-left: 12%;
 	margin-right: 12%;
 	border-radius: 5em;
 	background-color:white;
 }
+
 ul{
 	list-style-type: none;
 	margin: 0;
@@ -29,9 +39,11 @@ ul{
 	border-bottom-right-radius:5em;
 	text-align: center;
 }
+
 li{
 	display: inline;	
 }
+
 li a{
 	display:inline-block;
 	color: white;
@@ -39,9 +51,13 @@ li a{
 	text-decoration:none;
 	text-align:center;
 }
+
 li a:hover{
 	background-color:#333;
 }
+
+/* Barre de Recherche */
+
 #search{
 	height:auto;
 	width: 50%;
@@ -51,46 +67,57 @@ li a:hover{
     background: #3399ff;
     border-radius: 1em;
 }
-#text{
+
+.text{
 	width: 70%;
     padding: 1.5%;  
     border: 0;
 	border-top-left-radius:0.5em;
     border-bottom-left-radius: 0.5em;   	
 }
-#button{
+
+.submit{
 	overflow: visible;
     border: 0;
-    padding: 0;
+    padding: 1.4%;
     cursor: pointer;
-    height: 2.5em;
     width: 26%;
     color: #3399ff;
     background: white;
     border-top-right-radius: 0.5em;   
 	border-bottom-right-radius:0.5em;
 }
+
+/* Titres */
+
 h2{
-	font-family:impact;
+	font-family:arial,helvetica,sans-serif;
 	text-align:center;
 	color:white;
 	padding-bottom:3%;
 	margin-bottom:0;
 	font-size:190%;
 }
-h3{
-	font-family:impact;
-	margin-bottom:0%;
+
+h4{
+	font-family:arial,helvetica,sans-serif;
+	font-size:150%;
+	font-style:bold;
+	margin-left:12%;
 }
-.old{
-	text-decoration:line-through;
-	font-size:90%;
+
+h5{
+	margin-top:2%;
+	margin-bottom: 2%;
+	font-family:arial,helvetica,sans-serif;
+	font-size:120%;
+	font-style:bold;
+	text-align:center;
 }
-.price{
-	font-size:130%;
-	color:#cc3300;
-}
-#bloc{
+
+/* Bloc Article */
+
+.bloc{
 	background-color:white;
 	width:70%;
 	margin-left:12%;
@@ -101,49 +128,269 @@ h3{
 	margin-bottom:3%;
 	border-radius:5em
 }
-#article{
+
+.article{
 	padding:5% 3% 3% 3%;
 	vertical-align:middle; 
 	display:inline-block;
 	text-align:center;
 	width:25%;
 	position:relative;
+	text-decoration:none;
 }
+
+.article:hover{
+	border-style:solid;
+	border-color:#3399ff;
+	border-width:1%;
+	border-radius:5em;
+	cursor:pointer;
+}
+
+h3{
+	font-family:arial,helvetica,sans-serif;
+	margin-bottom:0%;
+}
+
+.old{
+	text-decoration:line-through;
+	font-size:90%;
+}
+
+.price{
+	font-size:130%;
+	color:#cc3300;
+}
+
+/*Paragraphes */
+
+p{
+	font-family:arial,helvetica,sans-serif;
+	font-size:100%;
+	margin-top:0;
+	text-align:center;
+}
+
+/* Footer */
+
 footer{
 	margin-left:12%;
 	margin-right:12%;
 	text-align:center;
 }
-p{
-	font-family:impact;
-	font-size:100%;
-	margin-top:0;
-	text-align:center;
-}
-h4{
-	font-family:impact;
-	font-size:150%;
-	font-style:bold;
-	margin-left:12%;
-}
-h5{
-	margin-top:2%;
-	margin-bottom: 2%;
-	font-family:impact;
-	font-size:120%;
-	font-style:bold;
-	text-align:center;
-}
+/* Photos */
+
 .photo{
 	width: 60%;
 	margin-bottom:2%;
 	margin-top:2%
 }
+
 .padding{
 	padding-top:4%;
 	margin-bottom:0;
 }
+/* Fiches Produit */
 
+.fiche{
+	width:35%;
+	height:50%;
+	padding:5% 3% 3% 3%;
+	display:inline-block;
+	position:relative;
+	left:-10%;
+}
+
+.ficheprice{
+	font-size:150%;
+	color:#cc3300;
+	position:absolute;
+	top:35%;
+	right:8%;
+}
+li p{
+	text-align:left;
+	padding-left:5%;
+	padding-right:5%;
+	width:25%;
+}
+
+li p:last-child{
+	padding-bottom:2%;
+}
+
+li p:first-child{
+	font-weight:bold;
+	font-size:110%;
+}
+
+.button+p{
+	text-align:left;
+	position:absolute;
+	left:40%;
+	margin-top:5%;
+}
+
+.button{
+	position:absolute;
+	top:45%;
+	right:4%;
+	background-color:#3399ff;
+	color:#cc3300;
+	font-size:110%;
+	font-family:arial,helvetica,sans-serif;
+	padding:0.5%;
+	border-radius:5em;
+	cursor: pointer;
+	border:none;
+	
+}
+
+/* Panier */
+
+table{
+	border-collapse:collapse;
+	vertical-align:middle; 
+	display:inline-block;
+	text-align:center;
+	position:relative;
+	width: 90%;
+	margin-top:5%;
+	margin-bottom:5%;
+	font-family:arial,helvetica,sans-serif;
+}
+
+th{
+	font-size:110%;
+	color:#cc3300;
+}
+
+td{
+	border:1%;
+	border-style:solid;
+	border-color:black;
+	width:10%;
+}
+
+td:first-child{
+	width:50%;
+}
+
+td img{
+	width:15%;
+	float:left;
+	padding-left:3%;
+}
+
+.supprimer{
+	width:30%;
+	margin-left:32%;
+	cursor:pointer;
+}
+
+.commander{
+	font-size:170%;
+	color:white;
+	background-color:#3399ff;
+	border:none;
+	border-radius:5em;
+	margin-bottom:5%;
+	cursor:pointer;
+}
+
+/* Formulaire */
+
+label{
+	width:20%;
+	display:block;
+	float:left;
+}
+
+form{
+	padding-top:3%;
+	padding-left:5%;
+}
+
+p input{
+	width:30%;
+}
+
+.payer{
+	width:20%;
+}
+
+#pop_up{
+    display: none;
+    position: fixed;
+    top:0; right:0; bottom:0; left:0;
+    background-color: black;
+    opacity: 0.9;
+}
+#pop_up:target{
+    display: block;
+}
+.fenetre{
+    background: #3399ff;
+    padding: 1.5%;
+	border-style:solid;
+	border-color:#cc3300;
+    position: relative;
+    margin: 10% auto;
+    width: 40%;
+    border-radius: 1em;
+}
+img.fermer {
+    float: right;
+    margin: -4% -4% 0 0;
+}
+
+.valider{
+	font-size:170%;
+	color:white;
+	background-color:#3399ff;
+	border:none;
+	border-radius:5em;
+	margin:2%;
+	cursor:pointer;
+	text-decoration:none;
+	padding:0.8%;
+}
+/* Responsive Design*/
+	
+@media all and (orientation:portrait){
+	#bloc_page{
+		width:auto;
+	}
+	ul{
+		width:auto;
+	}
+	li{
+		display:block;
+	}
+	li a:hover{
+		background-size:70%;
+	}
+	#search{
+		width:50%;
+	}
+	.text{
+		width:70%;
+	}
+	.submit{
+		width:25%;
+	}
+	.bloc{
+		width:70%;
+	}
+	.article{
+		width:25%;
+	}
+	label{
+		display:block;
+		float:inherit;
+		width:inherit;
+	}
+}
 
 
 
